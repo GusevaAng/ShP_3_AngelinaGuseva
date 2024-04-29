@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.card {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: repeat(2 2fr);
+    grid-template-areas: 
+        "cardSkill cardMastering"
+        "cardDescription cardDelete";
+    gap: 5px 30px;
+    margin-bottom: 35px;
+    border: 1.2px solid #454545;
+    border-radius: 35px;
+    padding: 20px;
+    background: #2a2a2a;
+}
+
+.cardSkill {
+    font-size: 30px;
+    grid-area: cardSkill;
+    margin: 0;
+    align-content: center;
+    justify-items: center;
+}
+
+.cardDescription {
+    font-size: 20px;
+    grid-area: cardDescription;
+    margin: 0;
+}
+
+.cardMastering {
+    grid-area: cardMastering;
+    margin: 0;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.cardMasteringPercent {
+    font-size: 60px;
+    color: #ffffff;
+    background: linear-gradient(35deg, #eda9f8 33%, #91d0f7 66%, #FFFFFF);
+    background-clip: text;
+    color: transparent;
+}
+
+.cardDelete {
+    grid-area: cardDelete;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 40px;
+    width: auto;
+    border: 1px solid #454545;
+    border-radius: 40px;
+    font-size: 14px;
+
+}

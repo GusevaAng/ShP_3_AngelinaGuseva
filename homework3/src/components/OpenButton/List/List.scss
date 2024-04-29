@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.blockOfCompetencies {
+    margin: 35px;
+}
+
+.sortButton {
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "sortButtonLess sortTitle sortButtonMore";
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.sortTitle {
+    grid-area: sortTitle;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 18px
+
+}
+
+.sortButtonMore {
+    grid-area: sortButtonMore;
+}
+
+.sortButtonLess {
+    grid-area: sortButtonLess;
+}
+
+.sortButtonMore , .sortButtonLess {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background: #aed9f4;
+    border: 2px solid #2b394b;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f1f1f;
+    box-shadow: 0 2px 5px 0 #74a5d0;    
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sortButtonMore:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 10px 20px 0 #839bde;
+}
+
+.sortButtonLess:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 7px 15px 0 #839bde;
+}
